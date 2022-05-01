@@ -1,0 +1,381 @@
+<em><!DOCTYPE HTML>
+<html>
+<head>
+<title>Documentation by "WRTeam "</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+<section id="header">
+  <header> <span class="image avatar"><img src="images/ic_launcher.png" alt="Radio Online" /></span>
+    <h4 id="logo"><a href="#">Radio Online</a></h4>
+  </header>
+  <nav id="nav">
+    <ul>
+      <li><a href="#one" class="active">Table of Contents</a></li>
+    </ul>
+  </nav>
+</section>
+<div id="wrapper">
+<div id="main">
+<section id="one">
+<div class="container">
+
+<p>“ Radio Online ” </p>
+<header class="major">
+  <h2>Radio Online</h2>
+</header>
+<div class="borderTop">
+  <div class="span-6 colborder info prepend-1">
+    <p class="prepend-top"> <strong> Created: 12 March 2018<br>
+      Company: WRTeam <br>
+      Contact: <a href="https://themeforest.net/user/wrteam" style='color:#f90849' target="_blank">CodeCanyon Profile</a> </strong> </p>
+  </div>
+  <div class="span-12 last">
+    <p class="prepend-top append-0">Thank you for purchasing the code. If you have any questions that are beyond the scope of this help file, please feel free to message me via my user page contact form <a href="https://themeforest.net/user/wrteam" style='color:#3c55d1' target="_blank">here</a>. Thanks so much!</p>
+  </div>
+</div>
+<h1 id="toc" > Table of Contents</h1>
+
+<li><a href="#setup" style="color:#ff0039">How to setup Flutter</a></li>
+<li><a href="#applogo" style="color:#ff0039">How to change app logo</a></li>
+<li><a href="#appname" style="color:#ff0039">How to change app name & app color?</a></li>
+<li><a href="#packagename" style="color:#ff0039">How to change package name</a></li>
+<li><a href="#images" style="color:#ff0039">How to change images</a></li>
+<li><a href='#api' style="color:#ff0039">How to Change Base url</a></li>
+<li><a href='#notification' style="color:#ff0039">How to intigrate firebase push notification</a></li>
+<li><a href='#admob' style="color:#ff0039">How to Setup Admob</a></li>
+<li><a href='#rtl' style="color:#ff0039">How to enable support for RTL in app</a></li>
+<li><a href='#apk' style="color:#ff0039">How to Generate Release APK</a></li>
+<li><a href='#support' style="color:#ff0039">Support</a></li>
+
+
+	
+<section id="setup">
+  <div class="container"> <br>
+    <h2>How to Setup Flutter in Android Studio</h2>
+   
+    <ol>
+      
+   <li>Download Lastest Flutter SDK from below link.in that click on flutter_window_xxx.zip button.</li>
+   
+   <li><a href="https://flutter.dev/docs/get-started/install/windows">Flutter sdk Here</a></li>
+    <br>
+	<img src="images/setup.png" alt="Radio Online" />
+    <br><br>
+	<li>Extract the zip file and copy flutter folder into your desired installation location for the Flutter SDK (eg. C:\src\flutter; do not install Flutter in a directory like C:\Program Files\).</li>
+	<br><li>Inside Flutter folder find flutter_console.bat. Start it by double-clicking.<\li><br><br>
+		<img src="images/setup2.png" alt="Radio Online" />
+   <br>
+   <li>Now set your enviournment variable</li>
+   <li>From the Start search bar in , type ‘env’ and select Edit environment variables for your account</li>
+   
+   
+  <br>
+	<img src="images/path.png" alt="Radio Online" />
+    <br><br>
+	
+	<li>Under User variables check if there is an entry called Path:</li>
+	<li>Click on Edit.new Dialog open from it click on new and copy full path to flutter\bin as its value</li>
+	<li>Now Restart your pc for changes to take effect</li>
+	<img src="images/path2.png" alt="Radio Online" /><br><br>
+	<li>Now check everything is ok or not</li>
+	<li>open cmd and do following shown in below picture</li><br>
+		<img src="images/check.png" alt="Radio Online" /><br><br>
+		<li>Now open Android Studio and create new flutter project then select your flutter sdk file to the location where we have downloaded earlier and that's it</li>
+			<br><img src="images/flutter.png" alt="Radio Online" /><br><br>
+		
+		
+	</ol>
+    <div class="section_bdr"></div>
+    </ul>
+  </div>
+</section>
+
+
+
+<section id="appname">
+  <div class="container"> <br>
+    <h2>How to Change app name and app color </h2>
+   
+    <ol>
+      
+  
+    <br>
+	<img src="images/name1.png" alt="Radio Online" />
+    <br><br>
+<li>For Android, to change label that is shown below android app icon, open android > app > src > main > open mainfest.xml and inside that label change that string as shown in below fig. </li><br>
+		<img src="images/name2.png" alt="Radio Online" />
+   <br><br>
+<li>For iOS, to change label that is shown below ios app icon, open ios > Runner > Info.plist inside that <key>CFBundleName</key> change that string as shown in below fig. </li><br>
+		<img src="images/name3.png" alt="Radio Online" />
+   
+	</ol>
+    <div class="section_bdr"></div>
+    </ul>
+  </div>
+</section>
+
+
+
+<section id="applogo">
+  <div class="container"> <br>
+    <h2>How to Change app logo</h2>
+   <ol>
+   
+<li>For Android, open android > app > src > main > res > mipmap add here your logo according to device screen size </li><br>
+		<img src="images/logo_1.png" alt="Radio Online" />
+   <br><br>
+<li>For iOS, open ios > Runner > Assets.xcassets > AppIcon.appiconset here you need to put your logo according to diffrent size. </li><br>
+		<img src="images/logo_2.png" alt="Radio Online" />
+   
+	</ol>
+    <div class="section_bdr"></div>
+    </ul>
+  </div>
+</section>
+
+
+
+<section id="packagename">
+  <div class="container"> <br>
+    <h2>How to change package name</h2>
+   <ol>
+<li>In the Android pane, click on the little gear icon.Uncheck/Deselect the Compact Empty Middle Packages option.</li>
+<br>
+   	<img src="images/packagename_1.png" alt="Radio Online" />
+    <br><br>
+   
+      <li>Your package directory will now be broken up in individual directories.</li><br>
+<img src="images/packagename_2.png" alt="Radio Online" />
+    <br><br>
+      <li>Individually select each directory you want to rename, and: Right-click it Select Refactor Click on Rename current In the Pop-up dialog.</li><br>
+	<img src="images/packagename_3.png" alt="Radio Online" />
+    <br><br>
+
+      <li>Enter the new name and hit Refactor.Allow a minute to let Android Studio update all changes.</li><br>
+<img src="images/packagename_4.png" alt="Radio Online" /><br><br>
+
+  
+    <li>Now press ctrl + shift + R and replace old packagename with your new packagename </li><br>
+	
+	<img src="images/packagename_5.png" alt="Radio Online" />
+    <br><br>
+   
+   <li>For ios open ios > Runner > info.plist > there is the key CFBundleIdentifier change the string value for that as shown in below</li><br>
+   	<img src="images/packagename_6.png" alt="Radio Online" />
+    <br><br>
+   
+	</ol>
+    <div class="section_bdr"></div>
+    </ul>
+  </div>
+</section>
+
+
+
+<section id="images">
+  <div class="container"> <br>
+    <h2>How to Change images in your app</h2>
+   <ol>
+   
+<li>To change images like background, placeholder, logo add your images in assets > image > folder </li><br>
+		<img src="images/images.png" alt="Radio Online" />
+   <br><br>
+
+   
+	</ol>
+    <div class="section_bdr"></div>
+    </ul>
+  </div>
+</section>
+
+
+
+<section id="api">
+  <div class="container">
+    <h2>How to change base url</h2>
+	<ol>
+  <li>open lib > helper > constant.dart > there is api section here you need to change base url with your value.</li>
+  <br>
+   <img src="images/api.png" alt="Radio Online" /><br><br>
+   
+   
+ 
+</ol>
+  
+			<p> </p> 
+    <div class="section_bdr"></div>
+	  </ul>
+  </div>
+</section>
+
+
+
+<section id="notification">
+  <div class="container">
+    <h2>How to intigrate firebase push notification</h2>
+	<ol>
+  <li>For Firebase push notification you have to follow this step <a href=https://medium.com/flutterpub/enabling-firebase-cloud-messaging-push-notifications-with-flutter-39b08f2ed723> click here </a> </li>
+  <br>
+  <li>After performing this step you have to get your fcm server key from firebase panel</li><br>
+   <img src="images/noti_2.png" alt="Radio Online" /><br><br>
+   
+    <li>And paste it into panel setting > Notification setting > Fcm Server key </li><br>
+   <img src="images/noti_1.png" alt="Radio Online" /><br><br>
+   
+</ol>
+  
+			<p> </p> 
+    <div class="section_bdr"></div>
+	  </ul>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="admob">
+  <div class="container">
+    <h2>How to Setup Admob</h2>
+	<ol>
+ 
+  <li>Open Helper-> Constant.dart in that file you have to change your admob ids with given below:</li><br>
+   <img src="images/admob1.png" alt="Radio Online" /><br><br>
+   
+    <li>Now change your app id, for that android -> manifest.xml application id as shown below: </li><br>
+   <img src="images/admob2.png" alt="Radio Online" /><br><br>
+   
+   
+   <li>For ios Runner-> info.plist.there is variable called GADApplicationIdentifier here you need to change value as shown in below</li>
+    <img src="images/admob4.png" alt="Radio Online" /><br><br>
+   
+    <li>In All radio tab, we have added ad after 3 item if you wanat to change then you have to change variable in constant.dart there is variable AD_AFTER_ITEM that you can set according to your need</li><br>
+   <img src="images/admob3.png" alt="Radio Online" /><br><br>
+   
+   
+</ol>
+  <p> </p> 
+    <div class="section_bdr"></div>
+	  </ul>
+  </div>
+</section>
+
+
+
+<section id="rtl">
+  <div class="container">
+    <h2>How to enable support for RTL in app</h2>
+	<ol>
+ 
+  <li>for that go to Helper-> Constant.dart here you need to change direction variable value to TextDirection.rtl for rtl support</li><br>
+   <img src="images/rtl.png" alt="Radio Online" /><br><br>
+   
+   
+   
+</ol>
+  <p> </p> 
+    <div class="section_bdr"></div>
+	  </ul>
+  </div>
+</section>
+
+
+<section id="apk">
+  <div class="container">
+    <h2>Generate Release APK</h2>
+	<ol>
+  <li>In you android studio, right click on you android module of you flutter project.there is option flutter, click on that inside open in new module.then generate release apk from that new module.</li>
+  
+  <br>
+   <img src="images/apk1.png" alt="Radio Online" /><br><br>
+   
+  
+  <li>and if in your android studio if flutter option is disable then go to file option in your android studio inside open then locate your flutter project's android module and open it.now generate relase apk from that new module.</li>
+  <br>
+   <img src="images/apk2.png" alt="Radio Online" /><br><br>
+   <img src="images/apk3.png" alt="Radio Online" /><br><br>
+     <li>In Build menu there is option generate signed bundle/apk.</li>
+  
+  <br>
+   <img src="images/apk4.png" alt="Radio Online" /><br><br>
+   
+ 
+</ol>
+  
+			<p> </p> 
+    <div class="section_bdr"></div>
+	  </ul>
+  </div>
+</section>
+
+<section id="support">
+  <div class="container"> <br>
+    <h2>Need Support?</h2>
+    <p>Its our pleasure to serve our service and support. please contact our support team.</p>
+    <p>Head of Customer Support : Janki Bhatti <a href="https://join.skype.com/invite/VGeSe7WKtty0" target="_blank" style='color:#3c55d1'>Skype Name :  Janki Bhatti</a></p>
+	
+	<p>To help our customers, we constantly be in touch with every customer if they need any assistance regarding our product.
+	We offer our customers a support from  <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) – We are a Team located in India – Asia.</strong></p>
+	<p>Typically we reply our customers for all the questions and queries within 24 hours of time via comments, support forum or emails.</p>
+	
+    <div class="section_bdr"></div>
+    </ul>
+  </div>
+</section>
+		
+   <section id="rating">
+  <div class="container"> <br>
+    <h2>Rating </h2>
+    <p>If you like our app, we will highly appreciate if you can provide us a rating of 5. You can rate us from your CodeCanyon Menu > Download page.</p>
+    <div class="section_bdr"></div>
+    </ul>
+  </div>
+</section>
+
+
+
+</div>
+
+<!-- Footer -->
+<section id="footer">
+  <div class="container">
+    <ul class="copyright">
+      <li>
+        <h3><span style="color:#0e8bcb;font-style:italic">WRTeam</span> 
+      </li>
+      <!--<li><a href="http://www.viaviweb.in" target="_blank"><span style="color:#9f9f9f;font-style:italic">Viavi Webtech</span></a></li>-->
+    </ul>
+  </div>
+</section>
+</div>
+<!-- Scripts --> 
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/jquery.scrollzer.min.js"></script> 
+<script src="assets/js/jquery.scrolly.min.js"></script> 
+<script src="assets/js/skel.min.js"></script> 
+<script src="assets/js/util.js"></script> 
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]--> 
+<script src="assets/js/main.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
+	});
+	$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
+});
+</script>
+<div><a href="#" class="scrollup">Scroll</a></div>
+</body>
+</html>
+</em>

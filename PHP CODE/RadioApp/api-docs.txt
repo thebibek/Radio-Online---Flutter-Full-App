@@ -1,0 +1,88 @@
+API URL -->> 
+	https://www.radio.wrteam.in/Api/  - (all APIs in one file only)
+
+API methods
+-------------------------
+1. get_categories()
+2. get_radio_station_by_category()
+3. get_radio_station()
+4. register_token()
+5. radio_station_report()
+
+7. get_privacy_policy()
+8. get_about_us()
+9. get_terms_conditions()
+10. get_slider()
+11. search_station()
+
+12. get_city()
+13. get_categories_by_city()
+
+14. get_city_mode()
+------------------------------------------
+What parameters to be Passed?  See here >>
+------------------------------------------
+
+Use POST method to pass the parameters
+
+1. get_categories()
+Url:https://www.radio.wrteam.in/Api/get_categories
+	access_key:6808
+
+2. get_radio_station_by_category()
+Url:https://www.radio.wrteam.in/Api/get_radio_station_by_category
+        access_key:6808
+	category_id:1
+
+3. get_radio_station()
+Url:https://www.radio.wrteam.in/Api/get_radio_station
+	access_key:6808
+        offset:0
+        limit:10
+
+4. register_token()
+Url:https://www.radio.wrteam.in/Api/register_token
+	access_key:6808
+	token:token
+
+5. radio_station_report()
+Url:https://www.radio.wrteam.in/Api/radio_station_report
+        access_key:6808
+        radio_station_id:1
+        message:Any reporting message
+
+7. get_privacy_policy()
+Url:https://www.radio.wrteam.in/Api/get_privacy_policy
+         access_key:6808
+
+8. get_about_us()
+Url:https://www.radio.wrteam.in/Api/get_about_us
+         access_key:6808
+
+9. get_terms_conditions()h
+Url:https://www.radio.wrteam.in/Api/get_terms_conditions
+         access_key:6808
+
+10.get_slider()
+Url:https://www.radio.wrteam.in/Api/get_slider
+         access_key:6808
+
+11.search_station()
+Url:https://www.radio.wrteam.in/Api/search_station
+        access_key:6808        
+        offset:0{optional}
+        limit:10{optional}
+        keyword:keyword{optional}
+
+12. get_city()
+Url:https://www.radio.wrteam.in/Api/get_city
+        access_key:6808   
+
+13. get_categories_by_city()
+Url:https://www.radio.wrteam.in/Api/get_categories_by_city
+        access_key:6808
+        city_id:3
+
+14. get_city_mode() //0-Disable, 1-Enable
+Url:https://www.radio.wrteam.in/Api/get_city_mode
+    access_key:6808

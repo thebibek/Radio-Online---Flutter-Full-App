@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Radio App - Documentation by WRTeam</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon"  type="image/png"  href="images/app_icon.png" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+        <section id="header">
+            <header>
+                <span class="image avatar"><img src="images/app_icon.png" alt="" /></span>
+                <h4 id="logo"><a href="#">PHP Radio App Admin Panel</a></h4>
+            </header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#one" class="active">Installation</a></li>
+                    <li><a href="https://wrteam.in/" target="_blank">Support</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <ul class="icons">
+                    <li><a href="#" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" target="_blank" class="icon fa fa-linkedin"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" target="_blank" class="icon fa fa-google-plus"><span class="label">Email</span></a></li>
+                </ul>
+            </footer>
+        </section>
+        <div id="wrapper">
+            <div id="main">
+                <section id="one">
+                    <div class="container">
+                        <header class="major">
+                            <h2>PHP Radio App Admin Panel</h2>
+                        </header>
+                        <div class="borderTop">
+                            <p><a style="color:#06F">Table of Contents</a></p>
+                            <ol class="alpha">
+                                <li><a href="#installation">Configure on your server</a></li>
+                                <li><a href="#notification-management">Notification Management</a></li>
+                                <li><a href="#slider">Manage Slider</a></li>
+                                <li><a href="#category">Manage Category</a></li>
+                                <li><a href="#manage-radio">Manage Radio Station</a></li>
+                                <li><a href="#radio-reports">Radio Station Report</a></li>                              
+                                <li><a href="#pp">Set Privacy Policy</a></li>
+                                <li><a href="#tc">Set Terms Conditions</a></li>
+                                <li><a href="#about_us">Set About Us</a></li>
+                            </ol>
+                            <div class="span-12 last">
+                                <p class="prepend-top append-0">Thank you for purchasing the app. If you have any questions that are beyond the scope of this help file, please feel free to message me via my user page contact form <a href="mailto:info@wrteam.in" style='color:#06F'>here</a>. Thank you so much!</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Configure on your server -->
+                        <h3 id="installation"> 1. How to Configure Database & Back-end on Your Server?</h3>
+                        <ol>
+                            <li>First of all find the  <b>Radio</b> folder from the downloaded package and upload to your server.</li>
+                            <li>Create a new database from cPanel</li>
+                            <li>Create new user for the database & give all the privileges to the user</li>
+                            <li>Import the database file 'radio.sql' to your PHPMYADMIN </li>
+                            <li>Open File Manager or FTP or File Explorer</li>
+                            <li>If you are using SSL (HTTPS) than go to <code>'application/config/'</code> directory and Open <code>'config.php'</code> file in PHP Code and Set http to https on line no - 27.</li>
+                            <li>Go To <code>'application/config/'</code> directory and Open <code>'database.php'</code> file in PHP Code                           
+                            <li>Set database credentials with your credentials on line number - 51,52,53,54 <br>
+                                <blockquote>$db['default']['hostname'] = 'localhost';  // Change as required<br>
+                                    $db['default']['username'] = "mydb_user";  // Change as required<br>
+                                    $db['default']['password'] = "mydb_user_password";  // Change as required<br>
+                                    $db['default']['database'] = "myradiopanel_db";	// Change as required</blockquote>
+                            </li>
+                        </ol>
+                        <p>Thats it! Now you are ready to run your first Radio App : <b>http://radio.wrteam.in</b></p>
+                        <b>Default Login Details</b><br>
+                        User: admin<br>
+                        Pass: admin<br><br>
+                        <p>Change the default Password of Radio admin panel after successful installation </p>
+                        <img src="images/change-password.png" alt="image"/> 
+                        <br/>
+                        <p>Change the Logo of Radio admin panel after successful installation </p>
+                        <img src="images/change-profile.png" alt="image"/> 
+                        
+                        <!-- Notification Management -->
+                        <h3 id="notification-management"> 2. Notification Management</h3>
+                        <p>First Of all,we need to set the FCM server key from <a href="https://console.firebase.google.com" target="_blank">Firebase console</a></p>
+                        <img src="images/notification-setting.png" alt="image"/>
+                        <p>After updating or setting up the FCM server key,<br>Notifications can be send to All Users at a time to their respective email-id's</p>
+                        <img src="images/send-notification.png" alt="image"/>
+                        
+                        <!-- Manage Slider -->
+                        <h3 id="slider"> 3. Manage Slider</h3>
+                        <p> Create Slider with Category, Radio Station, Title & image. You can view, Edit & Delete the list of Slider.</p>
+                        <img src="images/slider.png" alt="image"/>
+                        <div class="section_bdr"></div>
+                        
+                        <!-- Manage Category -->
+                        <h3 id="category"> 4. Manage Category</h3>
+                        <p> Create Category with Category Name & icon/image. Icon/Image size must be less than 100kb. You can view, Edit & Delete the list of Categories. </p>
+                        <img src="images/category.png" alt="image"/>
+                        <div class="section_bdr"></div>
+                        
+                        <!-- Manage Radio Station --->
+                        <h3 id="manage-radio"> 5. Manage Radio Station</h3>
+                        <p>Create Radio Station. You can view, Edit & Delete the list of Radio Station. </p>    
+                        <img src="images/radio-station.png" alt="image"/>
+                        
+                        <!-- Radio Station Report -->
+                        <h3 id="radio-reports"> 6. Radio Station Report</h3>
+                        <p>In side the Radio Station report section you will able to see all the radio station which are reported by the users. </p>
+                        <p>From here you can easily delete that report just by clicking on delete Icon.</p>    
+                        <img src="images/radio-station-report.png"/>
+                        <div class="section_bdr"></div>                     
+                        
+                        <h3 id="pp">7. Set Privacy Policy</h3>
+                        <p>Set Privacy Policy for your website and app.</p>
+                        <img src="images/pp.png"/>
+                        <div class="section_bdr"></div>
+                        
+                        <h3 id="tc">8. Set Terms Conditions</h3>
+                        <p>Set Terms Conditions for your website and app.</p>
+                        <img src="images/tc.png"/>
+                        <div class="section_bdr"></div>
+                        
+                        <h3 id="about_us">9. About Us Content</h3>
+                        <p>Set and manage your about us content for app.</p>
+                        <img src="images/about-us.png"/>
+
+                </section>
+                
+                <section id="credits">
+                    <div class="container">
+                        <p class="append-bottom alt large"><strong><a style="color:#06F" href='https://wrteam.in/' target='_blank'>WRTeam</a></strong></p>
+                        <p><a style="color:#06F" href="#one">Go To Table of Contents</a></p><div class="section_bdr"></div>
+                        <!-- </ul>-->
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Scripts --> 
+        <script src="assets/js/jquery.min.js"></script> 
+        <script src="assets/js/jquery.scrollzer.min.js"></script> 
+        <script src="assets/js/jquery.scrolly.min.js"></script> 
+        <script src="assets/js/skel.min.js"></script> 
+        <script src="assets/js/util.js"></script> 
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]--> 
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
